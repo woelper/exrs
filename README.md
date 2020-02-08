@@ -147,7 +147,7 @@ use exr::prelude::*;
 
 // ReadOptions::default() includes multicore decompression
 let image = FullImage::read_from_file("/images/test.exr", ReadOptions::default())?;
-println("file meta data: {:#?}", image); // does not print actual pixel values
+println!("file meta data: {:#?}", image); // does not print actual pixel values
 ```
 
 Writing all image contents at once:
